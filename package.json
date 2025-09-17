@@ -1,0 +1,64 @@
+{
+    "name": "oceanic-custom",
+    "displayName": "Oceanic Custom",
+    "description": "A custom oceanic-inspired dark theme with cyan accents, professional colors, and integrated font settings for optimal coding experience",
+    "version": "1.0.0",
+    "publisher": "facundo-malgieri",
+    "engines": {
+        "vscode": "^1.74.0"
+    },
+    "icon": "oceanic-custom-icon.png",
+    "categories": [
+        "Themes"
+    ],
+    "main": "./extension.js",
+    "activationEvents": [
+        "onStartupFinished"
+    ],
+    "keywords": [
+        "theme",
+        "oceanic",
+        "dark",
+        "cyan",
+        "custom",
+        "typescript",
+        "react",
+        "font",
+        "cursor",
+        "professional"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "Oceanic Custom",
+                "uiTheme": "vs-dark",
+                "path": "./themes/oceanic-custom.json"
+            }
+        ],
+        "configuration": {
+            "title": "Oceanic Custom",
+            "properties": {
+                "oceanicCustom.applyFontSettings": {
+                    "type": "boolean",
+                    "default": true,
+                    "description": "Apply recommended font settings with the theme"
+                }
+            }
+        },
+        "commands": [
+            {
+                "command": "oceanicCustom.applyFontSettings",
+                "title": "Apply Oceanic Custom Font Settings"
+            }
+        ]
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/facundomalgieri/oceanic-custom"
+    },
+    "bugs": {
+        "url": "https://github.com/facundomalgieri/oceanic-custom/issues"
+    },
+    "homepage": "https://github.com/facundomalgieri/oceanic-custom#readme",
+    "license": "MIT"
+}
