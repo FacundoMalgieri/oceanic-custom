@@ -2,12 +2,27 @@
     "name": "oceanic-custom",
     "displayName": "Oceanic Custom",
     "description": "A custom oceanic-inspired dark theme with cyan accents, professional colors, and integrated font settings for optimal coding experience",
-    "version": "1.0.0",
+    "version": "1.0.2",
     "publisher": "facundo-malgieri",
     "engines": {
         "vscode": "^1.74.0"
     },
     "icon": "oceanic-custom-icon.png",
+    "galleryBanner": {
+        "color": "#263238",
+        "theme": "dark"
+    },
+    "screenshots": [
+        {
+            "path": "screenshots/typescript-example.png"
+        },
+        {
+            "path": "screenshots/theme-overview.png"
+        },
+        {
+            "path": "screenshots/ui-elements.png"
+        }
+    ],
     "categories": [
         "Themes"
     ],

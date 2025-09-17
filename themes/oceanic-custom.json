@@ -254,6 +254,35 @@
       }
     },
     {
+      "name": "JSX Text Content",
+      "scope": [
+        "meta.jsx.children.tsx",
+        "meta.jsx.children.jsx"
+      ],
+      "settings": {
+        "foreground": "#FFFFFF"
+      }
+    },
+    {
+      "name": "Arrow Functions and Blocks Cyan",
+      "scope": [
+        "meta.arrow.tsx",
+        "meta.arrow.ts",
+        "meta.arrow.jsx",
+        "meta.arrow.js",
+        "meta.block.tsx",
+        "meta.block.ts",
+        "meta.block.jsx",
+        "meta.block.js",
+        "storage.type.function.arrow",
+        "punctuation.definition.arrow",
+        "keyword.operator.arrow"
+      ],
+      "settings": {
+        "foreground": "#89DDFF"
+      }
+    },
+    {
       "scope": [
         "meta.definition.variable",
         "variable.other.readwrite.alias",

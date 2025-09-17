@@ -13,6 +13,7 @@ A custom oceanic-inspired dark theme for Visual Studio Code and Cursor with cyan
   - **Font**: Source Code Pro (with fallbacks)
   - **Size**: 18px
   - **Line Height**: 1.6
+- **Enhanced File Tree**: WebStorm-style indentation with visual guides for better project navigation
 - **Consistent UI**: Unified sidebar and tab styling with subtle hover effects
 
 ## Color Palette
@@ -53,9 +54,11 @@ A custom oceanic-inspired dark theme for Visual Studio Code and Cursor with cyan
 - **Command Palette**: `Ctrl+Shift+P` → "Preferences: Color Theme" → Select "Oceanic Custom"
 - **Settings**: Go to Settings → "Workbench: Color Theme" → Choose "Oceanic Custom"
 
-### Font Settings
+### Font Settings & UI Enhancements
 
-The extension includes optimal font settings that are automatically applied:
+The extension includes optimal settings that are automatically applied:
+- **Font Configuration**: Source Code Pro, 18px, 1.6 line height
+- **Tree Indentation**: WebStorm-style file tree with visual guides
 - **Auto-apply**: Enabled by default when you select the theme
 - **Manual command**: Use `Ctrl+Shift+P` → "Apply Oceanic Custom Font Settings"
 - **Disable auto-apply**: Go to Settings → search "oceanicCustom.applyFontSettings" → uncheck
@@ -69,6 +72,15 @@ The extension includes optimal font settings that are automatically applied:
 
 ## Screenshots
 
+### TypeScript/React Code
+![TypeScript Example](screenshots/typescript-example.png)
+
+### Theme Overview
+![Theme Overview](screenshots/theme-overview.png)
+
+### Sidebar & Tabs
+![UI Elements](screenshots/ui-elements.png)
+
 The theme provides consistent, beautiful syntax highlighting across all supported languages with special attention to:
 - Clear variable and property highlighting in white
 - Distinctive bracket and punctuation coloring in cyan
@@ -76,9 +88,25 @@ The theme provides consistent, beautiful syntax highlighting across all supporte
 - Professional purple for keywords and types
 - Cohesive comment styling with matching delimiters
 
+## Repository
+
+🌊 **GitHub**: [https://github.com/FacundoMalgieri/oceanic-custom](https://github.com/FacundoMalgieri/oceanic-custom)
+
+- View source code
+- Report issues
+- Request features
+- Contribute improvements
+
 ## Contributing
 
 Feel free to open issues or submit pull requests if you have suggestions for improvements.
+
+### Development
+
+1. Clone the repository: `git clone https://github.com/FacundoMalgieri/oceanic-custom.git`
+2. Make your changes to the theme files
+3. Test locally by installing the VSIX
+4. Submit a pull request
 
 ## License
 

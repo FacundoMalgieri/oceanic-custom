@@ -1,0 +1,214 @@
+// Oceanic Custom Theme Demo Styles
+// Showcasing beautiful CSS/SCSS syntax highlighting
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500;600&display=swap');
+
+// Theme variables using Oceanic Custom colors
+$primary-color: #5CCFE6;
+$secondary-color: #89DDFF;
+$accent-color: #FF8F40;
+$background-color: #263238;
+$surface-color: #2F3E46;
+$text-color: #B3B1AD;
+$text-white: #FFFFFF;
+
+// Mixins for reusable styles
+@mixin flex-center($direction: row) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+}
+
+@mixin card-shadow($hover: false) {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+    @if $hover {
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+    }
+}
+
+@mixin responsive($breakpoint) {
+    @if $breakpoint ==mobile {
+        @media (max-width: 768px) {
+            @content;
+        }
+    }
+
+    @if $breakpoint ==tablet {
+        @media (max-width: 1024px) {
+            @content;
+        }
+    }
+
+    @if $breakpoint ==desktop {
+        @media (min-width: 1025px) {
+            @content;
+        }
+    }
+}
+
+// Main app styles
+.app {
+    font-family: 'Source Code Pro', monospace;
+    background: linear-gradient(135deg, $background-color 0%, darken($background-color, 5%) 100%);
+    min-height: 100vh;
+    color: $text-color;
+
+    .app-header {
+        @include flex-center(column);
+        padding: 2rem;
+        background: rgba($surface-color, 0.8);
+        backdrop-filter: blur(10px);
+
+        h1 {
+            color: $primary-color;
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin: 0 0 0.5rem 0;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        p {
+            color: $text-color;
+            font-size: 1.1rem;
+            margin: 0;
+            opacity: 0.8;
+        }
+    }
+
+    .user-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 1.5rem;
+        padding: 2rem;
+        max-width: 1200px;
+        margin: 0 auto;
+
+        @include responsive(mobile) {
+            grid-template-columns: 1fr;
+            padding: 1rem;
+        }
+    }
+
+    .user-card {
+        @include card-shadow();
+        background: rgba($surface-color, 0.9);
+        border-radius: 12px;
+        padding: 1.5rem;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        border: 1px solid rgba($primary-color, 0.2);
+
+        &:hover {
+            @include card-shadow(true);
+            transform: translateY(-4px);
+            border-color: $primary-color;
+        }
+
+        &.active {
+            border-color: $accent-color;
+
+            .user-role {
+                background: $accent-color;
+                color: $background-color;
+            }
+        }
+
+        .user-avatar {
+            @include flex-center();
+            margin-bottom: 1rem;
+
+            img {
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                border: 2px solid $primary-color;
+                object-fit: cover;
+            }
+        }
+
+        .user-info {
+            text-align: center;
+
+            h3 {
+                color: $text-white;
+                font-size: 1.2rem;
+                font-weight: 500;
+                margin: 0 0 0.5rem 0;
+            }
+
+            p {
+                color: $text-color;
+                font-size: 0.9rem;
+                margin: 0 0 1rem 0;
+                opacity: 0.8;
+            }
+
+            .user-role {
+                display: inline-block;
+                background: $primary-color;
+                color: $background-color;
+                padding: 0.25rem 0.75rem;
+                border-radius: 20px;
+                font-size: 0.8rem;
+                font-weight: 500;
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+            }
+        }
+    }
+
+    .app-footer {
+        @include flex-center();
+        padding: 2rem;
+        background: rgba($background-color, 0.8);
+        border-top: 1px solid rgba($primary-color, 0.2);
+
+        p {
+            color: $text-color;
+            font-size: 0.9rem;
+            margin: 0;
+            opacity: 0.7;
+        }
+    }
+
+    // Loading and error states
+    .loading,
+    .error {
+        @include flex-center();
+        height: 50vh;
+        font-size: 1.2rem;
+
+        &.loading {
+            color: $primary-color;
+        }
+
+        &.error {
+            color: #F28779; // Error color from theme
+        }
+    }
+}
+
+// Animations
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.user-card {
+    animation: fadeIn 0.6s ease-out;
+
+    @for $i from 1 through 10 {
+        &:nth-child(#{$i}) {
+            animation-delay: #{$i * 0.1}s;
+        }
+    }
+}

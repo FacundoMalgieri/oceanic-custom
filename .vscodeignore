@@ -1,0 +1,18 @@
+# Exclude development files
+example-project/node_modules/**
+example-project/package-lock.json
+example-project/.tool-versions
+example-project/vite.config.ts
+example-project/tsconfig*.json
+
+# Exclude git files
+.git/**
+.gitignore
+
+# Exclude development tools
+*.log
+.DS_Store
+Thumbs.db
+
+# Keep only essential files for the extension
+
