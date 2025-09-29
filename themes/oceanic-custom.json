@@ -59,6 +59,8 @@
     "terminal.ansiBrightMagenta": "#D4BFFF",
     "terminal.ansiBrightCyan": "#95E6CB",
     "terminal.ansiBrightWhite": "#FFFFFF",
+    "terminal.selectionBackground": "#37474F",
+    "terminal.findMatchBorder": "#5CCFE6",
     "badge.background": "#1F2A37",
     "badge.foreground": "#B3B1AD",
     "list.activeSelectionBackground": "#2F3E46",
