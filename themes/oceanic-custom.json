@@ -39,7 +39,7 @@
     "statusBar.debuggingBackground": "#FF8F40",
     "statusBar.noFolderBackground": "#263238",
     "panel.background": "#263238",
-    "panel.border": "#1F2A37",
+    "panel.border": "#37474F",
     "terminal.background": "#263238",
     "terminal.foreground": "#B3B1AD",
     "terminalCursor.foreground": "#FF8F40",
@@ -97,7 +97,7 @@
     "editorGroupHeader.tabsBorder": "#1E2A30",
     "editorGroupHeader.noTabsBackground": "#263238",
     "editorGroupHeader.border": "#1E2A30",
-    "editorGroup.border": "#1E2A30",
+    "editorGroup.border": "#37474F",
     "editorGroup.dropBackground": "#37474F",
     "toolbar.hoverBackground": "#37474F",
     "toolbar.activeBackground": "#2F3E46",
@@ -175,6 +175,7 @@
         "comment.block.json.comments",
         "comment.line.double-slash",
         "comment.block",
+        "comment.block.documentation",
         "punctuation.definition.comment.begin",
         "punctuation.definition.comment.end",
         "punctuation.definition.comment.ts",
@@ -187,7 +188,7 @@
         "comment.line.double-slash.jsx"
       ],
       "settings": {
-        "foreground": "#5C6773",
+        "foreground": "#8FA1B3",
         "fontStyle": "italic"
       }
     },
