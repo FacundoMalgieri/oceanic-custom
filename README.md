@@ -30,12 +30,14 @@ A custom oceanic-inspired dark theme for Visual Studio Code and Cursor with cyan
 ## Installation
 
 ### From Open VSX Registry (Cursor)
+
 1. Open Cursor
 2. Go to Extensions (Ctrl+Shift+X)
 3. Search for "Oceanic Custom"
 4. Click Install
 
 ### From VSIX File
+
 1. Download the `.vsix` file
 2. Open VS Code/Cursor
 3. Go to Extensions view (Ctrl+Shift+X)
@@ -51,12 +53,14 @@ A custom oceanic-inspired dark theme for Visual Studio Code and Cursor with cyan
 5. Font settings will be applied automatically (can be disabled in settings)
 
 ### Alternative Activation Methods:
+
 - **Command Palette**: `Ctrl+Shift+P` → "Preferences: Color Theme" → Select "Oceanic Custom"
 - **Settings**: Go to Settings → "Workbench: Color Theme" → Choose "Oceanic Custom"
 
 ### Font Settings & UI Enhancements
 
 The extension includes optimal settings that are automatically applied:
+
 - **Font Configuration**: Source Code Pro, 18px, 1.6 line height
 - **Tree Indentation**: WebStorm-style file tree with visual guides
 - **Auto-apply**: Enabled by default when you select the theme
@@ -73,20 +77,33 @@ The extension includes optimal settings that are automatically applied:
 ## Screenshots
 
 ### TypeScript/React Code
+
 ![TypeScript Example](screenshots/typescript-example.png)
 
 ### Theme Overview
+
 ![Theme Overview](screenshots/theme-overview.png)
 
 ### Sidebar & Tabs
+
 ![UI Elements](screenshots/ui-elements.png)
 
 The theme provides consistent, beautiful syntax highlighting across all supported languages with special attention to:
+
 - Clear variable and property highlighting in white
 - Distinctive bracket and punctuation coloring in cyan
 - Warm orange accents for numbers and parameters
 - Professional purple for keywords and types
 - Cohesive comment styling with matching delimiters
+
+## Support the Project
+
+If you enjoy using Oceanic Custom and want to support its development, consider buying me a coffee! ☕
+
+[![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-Support-yellow?style=for-the-badge&logo=buy-me-a-coffee)](https://www.buymeacoffee.com/facundo.malgieri)
+[![PayPal](https://img.shields.io/badge/PayPal-Donate-blue?style=for-the-badge&logo=paypal)](https://www.paypal.com/donate/?hosted_button_id=LFWM6H4YYAVQC)
+
+Your support helps maintain and improve this theme for the entire community. Thank you! 🌊
 
 ## Repository
 

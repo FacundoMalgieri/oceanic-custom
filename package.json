@@ -2,7 +2,7 @@
     "name": "oceanic-custom",
     "displayName": "Oceanic Custom",
     "description": "A custom oceanic-inspired dark theme with cyan accents, professional colors, and integrated font settings for optimal coding experience",
-    "version": "1.0.5",
+    "version": "1.0.6",
     "publisher": "facundo-malgieri",
     "engines": {
         "vscode": "^1.74.0"
@@ -42,6 +42,9 @@
         "cursor",
         "professional"
     ],
+    "sponsor": {
+        "url": "https://www.buymeacoffee.com/facundo.malgieri"
+    },
     "contributes": {
         "themes": [
             {
