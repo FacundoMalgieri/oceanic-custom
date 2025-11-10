@@ -5,7 +5,7 @@ const vscode = require('vscode');
  */
 function activate(context) {
     // Show update notification with support links (one-time per version)
-    const currentVersion = '1.0.6';
+    const currentVersion = '1.0.7';
     const lastNotifiedVersion = context.globalState.get('lastNotifiedVersion');
     
     if (lastNotifiedVersion !== currentVersion) {
